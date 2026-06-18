@@ -172,11 +172,11 @@ export default function AdminClient({ initialAuthenticated }: { initialAuthentic
       fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
     } as React.CSSProperties,
     loginWrap: { minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', padding: '20px' } as React.CSSProperties,
-    loginCard: { background: '#efe9e3', color: '#213326', border: '1px solid rgba(26,77,46,0.14)', borderRadius: '20px', padding: '44px 40px', width: '100%', maxWidth: '400px', animation: 'fadeUp .4s ease', boxShadow: '0 12px 32px rgba(0,0,0,0.16)' } as React.CSSProperties,
+    loginCard: { background: '#070a07d1', color: '#213326', border: '1px solid rgba(26,77,46,0.14)', borderRadius: '20px', padding: '44px 40px', width: '100%', maxWidth: '400px', animation: 'fadeUp .4s ease', boxShadow: '0 12px 32px rgba(0,0,0,0.16)' } as React.CSSProperties,
     loginLogo: { width: '44px', height: '44px', background: 'rgba(26,77,46,0.08)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', border: '1px solid rgba(26,77,46,0.14)', fontSize: '20px' } as React.CSSProperties,
     loginTitle: { textAlign: 'center', fontSize: '22px', fontWeight: 800, marginBottom: '6px' } as React.CSSProperties,
     loginSub: { textAlign: 'center', fontSize: '13px', color: '#64748b', marginBottom: '32px' } as React.CSSProperties,
-    fieldLabel: { fontSize: '11px', fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '.06em', display: 'block', marginBottom: '6px' } as React.CSSProperties,
+    fieldLabel: { fontSize: '11px', fontWeight: 700, color: '#daf4e4', textTransform: 'uppercase', letterSpacing: '.06em', display: 'block', marginBottom: '6px' } as React.CSSProperties,
     input: { width: '100%', background: '#fff', border: '1px solid rgba(26,77,46,0.14)', borderRadius: '10px', padding: '11px 14px', fontSize: '15px', color: '#213326', fontFamily: 'inherit', outline: 'none', marginBottom: '14px', display: 'block' } as React.CSSProperties,
     btnPrimary: { width: '100%', padding: '13px', background: '#1a4d2e', color: '#f7f3ea', fontSize: '15px', fontWeight: 700, borderRadius: '10px', fontFamily: 'inherit', cursor: 'pointer', border: 'none', marginTop: '8px', transition: 'background .2s' } as React.CSSProperties,
     errMsg: { fontSize: '13px', color: '#b91c1c', padding: '10px 14px', background: 'rgba(220,38,38,.08)', borderRadius: '8px', border: '1px solid rgba(220,38,38,.16)', textAlign: 'center', marginBottom: '10px' } as React.CSSProperties,
@@ -353,8 +353,9 @@ export default function AdminClient({ initialAuthenticated }: { initialAuthentic
     return (
       <div style={{ ...s.page, ...s.loginWrap }}>
         <div style={s.loginCard}>
-          <div style={s.loginLogo}>🛡️</div>
-          <h2 style={s.loginTitle}>Admin Panel</h2>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+            <img src="/jaxlab-white.png" alt="JAXLAB Logo" style={{ width: "12rem"}} />
+          </div>
           <p style={s.loginSub}>JaxLab RSVP Management</p>
           <form onSubmit={handleLogin}>
             <label style={s.fieldLabel}>Username</label>
